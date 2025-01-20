@@ -10,6 +10,7 @@ build/
 
 # Ignore environment variables file
 .env
+REMOVED
 
 # Ignore temporary files
 *.tmp
