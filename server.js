@@ -19,8 +19,12 @@ const sslOptions = {
 };
 
 if (isProduction) {
-  sslOptions.key = fs.readFileSync("path/to/local/privkey.pem");
-  sslOptions.cert = fs.readFileSync("path/to/local/fullchain.pem");
+  sslOptions.key = fs.readFileSync(
+    "REMOVED"
+  );
+  sslOptions.cert = fs.readFileSync(
+    "REMOVED"
+  );
 }
 
 const app = express();
