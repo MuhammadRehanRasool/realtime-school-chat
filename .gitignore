@@ -33,5 +33,5 @@ me.md
 # Local secrets / notes
 .env.*
 !.env.example
-REMOVED
+.env copy
 *.pem
