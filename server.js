@@ -19,12 +19,8 @@ const sslOptions = {
 };
 
 if (isProduction) {
-  sslOptions.key = fs.readFileSync(
-    "REMOVED"
-  );
-  sslOptions.cert = fs.readFileSync(
-    "REMOVED"
-  );
+  sslOptions.key = fs.readFileSync(process.env.SSL_KEY_PATH);
+  sslOptions.cert = fs.readFileSync(process.env.SSL_CERT_PATH);
 }
 
 const app = express();
@@ -204,7 +200,7 @@ app.get("/api/rooms", (req, res) => {
 // Serve chat_app.html file
 app.get("/", (req, res) => {
   //  res.sendFile(__dirname + "/chat_app.html");
-  res.send("Welcome to SchoolChat Chat API!");
+  res.send("Welcome to the Chat API!");
 });
 
 // Start server

@@ -30,3 +30,8 @@ package-lock.json
 yarn.lock
 
 me.md
+# Local secrets / notes
+.env.*
+!.env.example
+REMOVED
+*.pem
